@@ -1,0 +1,140 @@
+body{
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center top;
+}
+
+/*  */
+
+
+
+.marcas{
+  padding: 80px 135px;
+  background-color: #FDF0E9;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+
+
+.listas-marcas{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background-color: #FDF0E9;
+  color: #391400;
+  padding: 100px 135px;
+}
+
+.about-info{
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.info-alternative{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  /* margin-bottom: 34px; */
+}
+
+.about-info img{
+  width: 570px;
+  height: 570px;
+}
+
+.about-metrics{
+  display: flex;
+  justify-content: center;
+  border: 1px solid #F3D1BF;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/*overflow: hidden - é uma propriedade que oculta qualquer conteúdo que exceda os limites de um elemento contêiner. Em vez de exibir barras de rolagem (como com os valores auto ou scroll), o conteúdo transbordante é simplesmente cortado, tornando-se invisível e inacessível*/
+
+.card-metrics{
+  display: flex;
+  flex: 1; /* todos os cards vão ocupar a mesma largura */
+  flex-direction: column;
+  padding: 30px 48px;
+  gap: 14px;
+  border-left: 1px solid #f1dcd1;
+}
+
+/*flex-grow: 1 → o item pode crescer e ocupar espaço livre disponível.
+flex-shrink: 1 → o item pode encolher se não couber tudo na tela.
+flex-basis: 0 → a base inicial de tamanho do item é 0 (então o espaço vai ser dividido igualmente entre todos os itens que têm flex: 1).*/
+
+.card-metrics:first-child{
+  border-left: none; /* remove a borda do primeiro */
+}
+
+.porcent {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.description-metrics{
+  font-weight: 400;
+}
+
+
+
+
+.subtitle-alternative{
+  color: #EF6D58;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.title-alternative{
+  font-size: 56px;
+}
+
+.title-description{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.description-alternative{
+  font-weight: 300;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.button-alternative{
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px; 
+  padding: 8px;
+  font-weight: bolder;
+}
+
+.button-alternative:hover{ /*possibilita um elemento ter o seu estilo alterado através da ação do usuário, quando o próprio passa o cursor do mouse sobre o elemento.*/
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 10px -2px, rgba(0, 0, 0, 0.3) 0px 3px 5px -3px;;
+  transition: 0.4s;
+}
+
+
+/* como organizar o estilo do meu site/projeto desenvolvimento */ 
