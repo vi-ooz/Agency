@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+body{
+    font-family: 'Epilogue', sans-serif;
+}
+
+h1{
+    font-size: 4.5rem; /**/
+    font-weight: 800;
+    letter-spacing: -0.125rem;
+    line-height: 5rem;
+}
+
+h2{
+    font-size: 3.5rem; /*56px*/
+    font-weight: 800;
+    line-height: 4rem;
+    letter-spacing: -0.063rem;
+}
+
+h3{
+    font-size: 2.5rem; /*40px*/
+    font-weight: 800;
+    line-height: 3rem;
+}
+
+h4{
+    font-size: 1.5rem; /*24px*/
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+h5{
+    font-size: 1rem; /*16px*/
+    font-weight: 300;
+    letter-spacing: 0.188rem;
+    text-transform: uppercase;
+    color: #EF6D58;
+}
+
+p{
+    font-size: 1rem; /*16px*/
+    font-weight: 300;
+    line-height: 2rem;
+
+}
+
+.text-big{
+    font-size: 1.25rem; /*20px*/
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.text-small{
+    font-size: 0.875rem;
+    font-weight: 900;
+}

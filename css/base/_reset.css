@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.divider{
+  border-bottom: 1px solid #F3D1BF;
+}

@@ -1,0 +1,186 @@
+@import url(base/_reset.css);
+@import url(base/_typography.css);
+@import url(components/_navbar.css);
+@import url(layout/_header.css);
+@import url(layout/_hero.css);
+@import url(layout/_footer.css);
+@import url(components/_banner.css);
+@import url(components/_button.css);
+@import url(components/_card.css);
+@import url(pages/blog.css);
+@import url(pages/contato.css);
+@import url(pages/servicos.css);
+@import url(mobile.css);
+
+.marcas{
+  padding: 80px 135px;
+  background-color: #FDF0E9;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.listas-marcas{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background-color: #FDF0E9;
+  color: #391400;
+  padding: 100px 135px;
+}
+
+.about-info{
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.info-alternative{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.about-info img{
+  width: 570px;
+  height: 570px;
+}
+
+.about-metrics{
+  display: flex;
+  justify-content: center;
+  border: 1px solid #F3D1BF;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-metrics{
+  display: flex;
+  flex: 1; /* todos os cards vão ocupar a mesma largura */
+  flex-direction: column;
+  padding: 30px 48px;
+  gap: 14px;
+  border-left: 1px solid #f1dcd1;
+}
+
+.card-metrics:first-child{
+  border-left: none; /* remove a borda do primeiro */
+}
+
+.subtitle-alternative{
+  color: #EF6D58;
+}
+
+
+@media (max-width: 768px){
+  .hero-index{
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .image-group{
+    height: 334px;
+    width: 329px;
+  }
+
+  .container-index{
+    height: auto;
+    width: 400px;
+    padding: 0;
+  }
+
+  .container-index h1{
+    font-size: 56px;
+  }
+
+  .info-index{
+    width: 400px;
+  }
+
+  /* marcas */
+
+  .marcas{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px
+  }
+
+  .listas-marcas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 64px;
+  }
+
+  .listas-marcas img {
+    max-width: 147px; /* Define um tamanho máximo para os logos não ficarem gigantes */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  /* about */
+
+  .about{
+    padding: 30px;
+  }
+
+  .about-info{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .about-info img{
+    width: 328px;
+    height: 340px;
+  }
+
+  .info-alternative{
+    width: 460px;
+  }
+
+  .info-alternative h2{
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -1px;
+  }
+
+  /* about-metrics */
+
+  .about-metrics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 23px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .card-metrics{
+    height: 176px;
+    width: 300px;
+    border: 1px solid #f1dcd1;
+    border-collapse: collapse;
+  }
+
+  .card-metrics:first-child{
+  border-left: 1px solid #f1dcd1; /* remove a borda do primeiro */
+}
+}
+

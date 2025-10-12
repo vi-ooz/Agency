@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/LOGO.svg" type="image/x-icon">
-    <link rel="stylesheet" href="sobre.css">
-    <link rel="stylesheet" href="global.css">
-    <title>Agency</title>
+    <link rel="stylesheet" href="css/pages/sobre.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sobre</title>
 </head>
 <body>
     <header class="navigation-top">
-       <a href="index.html"><img class="logo" src="Imagens/LOGO.svg" alt=""></a>
+
+        <a href="index.html"><img class="logo" src="Imagens/LOGO.svg" alt=""></a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><img src="icon/menuBurg.svg" alt="icone menu"></label>
+
         <nav class="navigation">
+            <label for="menu-toggle" class="close-icon">&times;</label> 
             <ul class="menu">
                 <li><a class="lista" href="sobre.html" >Sobre</a></li>
                 <li><a class="lista" href="servicos.html" >Serviços</a></li>
                 <li><a class="lista" href="portfolio.html" >Portfólio</a></li>
                 <li><a class="lista" href="blog.html" >Blog</a></li>
-                <li><a class="lista" href="contato.html#faq-section" >FAQ</a></li>
+                <li><a class="lista" href="depoimentos.html">Avaliações</a></li>
+                
             </ul>
         </nav>
-        <a class="nav-button" href="contato.html">Contato</a>
+        <!-- o botão contato nao aparece na sidebar -->
+        <a class="nav-button" href="contato.html" >Contato</a>
+
     </header>
     
     <main>
         <section class="hero">
                 <div class="container">
-                    <h1 class="title">Sobre nós</h1>
-                    <p class="description">A agência oferece uma gama completa de serviços, incluindo habilidades técnicas, design e compreensão do negócio.</p>
+                    <h1>Sobre nós</h1>
+                    <p>A agência oferece uma gama completa de serviços, incluindo habilidades técnicas, design e compreensão do negócio.</p>
                 </div>
         </section>
 
@@ -65,13 +74,13 @@
                 <div class="features-group">
                     <div class="features-card">
                         <h5 class="title-feat">Características</h5>
-                        <p class="discription-feat01">A longo prazo, e trabalhar como uma extensão da equipe do comerciante.</p>
-                        <p class="discription-feat02">Capacidade de se colocar no lugar do comerciante. Visa estabelecer uma parceria de longo prazo e funcionar como uma extensão.</p>
+                        <p class="text-big">A longo prazo, e trabalhar como uma extensão da equipe do comerciante.</p>
+                        <p>Capacidade de se colocar no lugar do comerciante. Visa estabelecer uma parceria de longo prazo e funcionar como uma extensão.</p>
                     </div>
                 </div>
 
                 <div class="container-destaque">
-                    <div class="card">
+                    <div class="cardAbout">
                         
                             <div class="bg-icon-destaque"><img class="" src="icon/leque.svg" alt=""></div>
                         
@@ -81,12 +90,12 @@
                 
 
                     <div class="container-destaque">
-                        <div class="card">
+                        <div class="cardAbout">
                             
-                                <div class="bg-icon-destaque"><img class="" src="icon/leque.svg" alt=""></div>
+                            <div class="bg-icon-destaque"><img class="" src="icon/leque.svg" alt=""></div>
                             
                             <h4 class="title-destaque">Acessibilidade</h4>
-                            <p class="discription-destaque">Compreensão do negócio, capacidade de se colocar em posição.</p>
+                            <p>Compreensão do negócio, capacidade de se colocar em posição.</p>
                         </div>
                     </div>
                 </div>
@@ -96,24 +105,24 @@
         <section class="about-sec">
             <div class="about-metrics">
                 <div class="card-metrics">
-                    <h3 class="porcent">42%</h3>
-                    <p class="description-metrics">Anos de experiência</p>
+                    <h3>42%</h3>
+                    <p class="text_big">Anos de experiência</p>
                 </div>
                 <div class="card-metrics">
-                    <h2 class="porcent">73+</h2>
-                    <p class="description-metrics">Membros da agência</p>
+                    <h3>73+</h3>
+                    <p class="text_big">Membros da agência</p>
                 </div>
                 <div class="card-metrics">
-                    <h2 class="porcent">5.000</h2>
-                    <p class="description-metrics">Projetos concluídos</p>
+                    <h3>5.000</h3>
+                    <p class="text_big">Projetos concluídos</p>
             </div>
         </section>
 
         <section class="team-section">
             <div class="container-team">
                 <div class="div-team">
-                    <h5 class="subtitle-team">Nosso time</h5>
-                    <hp class="title-team">Equipe de Designers e Desenvolvedores</hp>
+                    <h5>Nosso time</h5>
+                    <h2 class="title-team">Equipe de Designers e Desenvolvedores</h2>
                 </div>
 
                 <div class="team-grid">

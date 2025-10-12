@@ -1,0 +1,150 @@
+.section-form{
+  padding: 128px 135px;
+  background-image: url(../../Imagens/mapContato.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form{
+  width: 400px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  background-color: white;
+  padding: 56px 48px;
+  border-radius: 8px;
+  color: #391400;
+}
+
+.input-form{
+  border-radius: 6px;
+  height: 36px;
+  padding: 8px 16px;
+  border: 1px solid #F3D1BF;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.textarea{
+  height: 84px;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: 1px solid #F3D1BF;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/*section contatos da agency*/
+.contato{
+  background-color: #FDF0E9;
+  height: 200px;
+  padding: 100px 141px;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #EF6D58;
+}
+
+.bgIconContact{
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #EF6D58;
+}
+
+
+.card-group{
+  display: flex;
+  justify-content: center;
+  border: 1px solid #F3D1BF;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card{
+  height: 100%;
+  display: flex;
+  flex: 1; /* todos os cards vão ocupar a mesma largura */
+  flex-direction: column;
+  padding: 48px;
+  gap: 14px;
+  border-left: 1px solid #f1dcd1;
+}
+
+.card:first-child{
+  border-left: none; /* remove a borda do primeiro */
+}
+
+/*FAQ*/
+
+.faq-sectionCont{
+  display: flex;
+  justify-content: space-between;
+  background-color: #FDF0E9;
+  padding: 100px 135px;
+}
+
+.div-sectionCont{
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  gap: 1.25rem;
+}
+
+.faqCont{
+  padding: 2px;
+  width: 570px; 
+  margin: 30px auto;
+  border: 1px solid #F3D1BF;
+  border-radius: 8px;
+  border-collapse: collapse;
+}
+
+.detailsCont{
+  border-bottom: 1px solid #F3D1BF;
+}
+
+.detailsCont:last-child{
+  border-bottom: none;
+}
+
+.detailsCont[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+.questionCont{
+  height: 35px;
+  display: flex;
+  background-color: #FDF0E9;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.questionCont::after {
+  content: "▾";
+  position: absolute;
+  right: 16px;
+  transition: transform 0.3s ease;
+  color: #f15b4b;
+}
+
+.responseCont{
+  padding: 16px 16px;
+  margin: 0.2vh 0.2vh;
+  color: #555;
+  line-height: 1.4;
+  font-size: 16px;
+  background-color: #fdf0e9b4;
+}
+

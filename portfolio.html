@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/LOGO.svg" type="image/x-icon">
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/portfolio.css">
     <title>Portfólio</title>
 </head>
 <body>
     <header class="navigation-top">
-       <a href="index.html"><img class="logo" src="Imagens/LOGO.svg" alt=""></a>
+
+        <a href="index.html"><img class="logo" src="Imagens/LOGO.svg" alt=""></a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><img src="icon/menuBurg.svg" alt="icone menu"></label>
+
         <nav class="navigation">
+            <label for="menu-toggle" class="close-icon">&times;</label> 
             <ul class="menu">
                 <li><a class="lista" href="sobre.html" >Sobre</a></li>
                 <li><a class="lista" href="servicos.html" >Serviços</a></li>
                 <li><a class="lista" href="portfolio.html" >Portfólio</a></li>
                 <li><a class="lista" href="blog.html" >Blog</a></li>
-                <li><a class="lista" href="contato.html#faq-section" >FAQ</a></li>
+                <li><a class="lista" href="depoimentos.html">Avaliações</a></li>
+                
             </ul>
         </nav>
-        <a class="nav-button" href="contato.html">Contato</a>
+        <!-- o botão contato nao aparece na sidebar -->
+        <a class="nav-button" href="contato.html" >Contato</a>
+
     </header>
 
     <main>
         <section class="hero">
                 <div class="container">
-                    <h1 class="title">Portfólio</h1>
-                    <p class="description">A agência oferece uma gama completa de serviços, incluindo habilidades técnicas, design e compreensão do negócio.</p>
+                    <h1>Portfólio</h1>
+                    <p>A agência oferece uma gama completa de serviços, incluindo habilidades técnicas, design e compreensão do negócio.</p>
                 </div>
         </section>
 
@@ -102,8 +111,8 @@
         <section class="banner-section">   
             <div class="banner">
                     <div class="content-banner">
-                        <h2 class="banner-title">Ajuda para construir o seu projeto dos sonhos</h2>
-                        <p class="banner-description">Uma agência digital é uma empresa que você contrata para terceirizar seus esforços de marketing digital, em vez de lidar com isso internamente.</p>
+                        <h2>Ajuda para construir o seu projeto dos sonhos</h2>
+                        <p>Uma agência digital é uma empresa que você contrata para terceirizar seus esforços de marketing digital, em vez de lidar com isso internamente.</p>
                         <button class="banner-button" type="button"><a class="link-button" href="contato.html" >Entre em contato</a></button>
                     </div>
                 <div class="img-end"><img src="Imagens/pic2.png" alt=""></div>
