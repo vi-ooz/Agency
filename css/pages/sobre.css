@@ -6,12 +6,12 @@ body{
 }
 
 /**/
-.section-serv{
+.section-serv-about{
   background-color: #FDF0E9;
   padding: 76px 135px;
 }
 
-.hero01{
+.hero01-about{
   height: 450px;
   display: flex;
   justify-content: space-between;
@@ -19,26 +19,10 @@ body{
 
 }
 
-.hero02{
+.hero02-about{
   display: flex;
   flex-direction: column;
   gap: 33px;
-}
-
-.hero-title{
-  color: #EF6D58;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 3px; /*Espaços estre as letras*/
-  text-transform: uppercase;
-}
-
-.hero-sub{
-  color: #391400;
-  font-size: 56px;
-  font-weight: 900;
-  line-height: 64px;
-  width: 470px;
 }
 
 .description01{
@@ -47,12 +31,6 @@ body{
   max-width: 570px;
   height: 227px;
   padding: 30px 135px;
-}
-
-.description02{
-  font-size: 16px;
-  color: #391400;
-  line-height: 32px;
 }
 /**/
 

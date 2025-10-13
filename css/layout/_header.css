@@ -1,0 +1,143 @@
+.navigation-top{
+  background-color: #28293E;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 135px;
+}
+
+.navigation{
+  display: flex;
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  align-items: center;
+}
+
+.nav-button{
+  height: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.nav-button:hover{
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.logo{
+  width: 152px;
+  height: 48px;
+} 
+
+.menu{
+  display: flex;
+  gap: 72px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Esconde o ícone de menu no desktop */
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.lista{
+  padding: 8px 0;
+  color: white;
+}
+
+.lista:hover{
+  color: #f34b31;
+  cursor: pointer;
+  transition: .2s;
+}
+
+@media (max-width: 400px){ 
+  .navigation-top {
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  /* Oculta o menu de desktop e o botão de Contato*/
+  .navigation, .nav-button {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block; /* Garante que o ícone do menu seja visível em mobile */
+    cursor: pointer; 
+  }
+
+  .menu-icon img{
+    position: relative;
+    bottom: -13px;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  /*Estilizando para virar uma sidebar */
+  .navigation {
+    position: fixed; /* Fica fixo na tela mesmo com scroll */
+    top: 0;
+    right: 0;
+    
+    /* Começa escondido fora da tela */
+    transform: translateX(100%); 
+    
+    /* Aparência */
+    width: 200px; /* Largura da sidebar */
+    height: 100vh; /* Altura total da tela */
+    background-color: #2D2D44;
+    box-shadow: -5px 0px 15px rgba(0,0,0,0.2);
+  }
+
+  /* Os itens do menu dentro da sidebar */
+  .menu {
+    flex-direction: column; /* Itens ficam um embaixo do outro */
+    align-items: flex-start;
+    padding-top: 3rem; /* Espaço no topo */
+    gap: 30px;
+  }
+
+  .menu li {
+    margin: 5px 0; /* Espaçamento vertical entre os itens */
+  }
+  
+  /*Mostrar a sidebar quando o checkbox for clicado */
+  #menu-toggle:checked ~ .navigation {
+    display: block; /*"re-exibir" a navegação */
+    transform: translateX(0); /* Puxa a sidebar de volta para a tela */
+  }
+
+  .close-icon {
+    display: block; /* Para posicionar */
+    position: absolute; /* Posição relativa à sidebar */
+    top: 1rem;
+    right: 1.5rem;
+    color: white;
+    font-size: 2rem; /* Tamanho do ícone */
+    cursor: pointer;
+  }
+}

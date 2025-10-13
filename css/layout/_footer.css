@@ -58,11 +58,13 @@
   color: #391400;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 400px) {
+  .footer{
+    padding: 20px;
+  }
   .footer-top {
     flex-direction: column;
-    gap: 52px;
+    gap: 32px;
   }
 
   .menu-footer {
@@ -95,6 +97,14 @@
   .footer-bottom .copy:last-child {
     display: flex;
     justify-content: center;
+  }
+
+  .copy {
+    display: flex;
+    justify-content: center;
+  }
+  .copy p {
+    width: 200px;
   }
 
 }

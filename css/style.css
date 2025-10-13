@@ -80,33 +80,13 @@
 }
 
 
-@media (max-width: 768px){
-  .hero-index{
-    height: auto;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    padding: 30px;
+@media (max-width: 400px){
+
+  body{
+    overflow-x: hidden;
   }
 
-  .image-group{
-    height: 334px;
-    width: 329px;
-  }
-
-  .container-index{
-    height: auto;
-    width: 400px;
-    padding: 0;
-  }
-
-  .container-index h1{
-    font-size: 56px;
-  }
-
-  .info-index{
-    width: 400px;
-  }
+  
 
   /* marcas */
 
@@ -115,7 +95,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 40px
+    padding:20px
   }
 
   .listas-marcas{
@@ -133,30 +113,31 @@
   /* about */
 
   .about{
-    padding: 30px;
+    padding: 20px;
+    max-width: 400px;
+    height: auto;
   }
 
   .about-info{
-    width: 400px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
   }
 
   .about-info img{
-    width: 328px;
+    width: 320px;
     height: 340px;
   }
 
   .info-alternative{
-    width: 460px;
+    width: 100%;
   }
 
   .info-alternative h2{
-    font-size: 40px;
-    line-height: 64px;
+    font-size: 32px;
+    line-height: 40px;
     letter-spacing: -1px;
   }
 
@@ -167,16 +148,16 @@
     flex-direction: column;
     align-items: center;
     border: none;
-    padding: 23px;
     border-radius: 8px;
-    overflow: hidden;
+     padding: 20px;
+     overflow: visible;
   }
 
   .card-metrics{
-    height: 176px;
-    width: 300px;
+   width: 100%;
     border: 1px solid #f1dcd1;
     border-collapse: collapse;
+    padding: 20px;
   }
 
   .card-metrics:first-child{
