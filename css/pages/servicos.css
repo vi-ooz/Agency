@@ -161,3 +161,96 @@
   justify-content: center;
   gap: 80px;
 }
+
+@media (max-width: 400px){
+  .section-serv{
+    padding: 40px 20px;
+  }
+
+  .hero01{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero02{
+    width: 320px;
+  }
+
+  .hero-sub{
+    font-size: 32px;
+  }
+  .description01{
+    height: auto;
+    padding: 0;
+  }
+
+  /* faq */
+
+  .divider{
+    width: 320px;
+  }
+
+  .faq{
+    width: 360px;
+    padding: 0;
+  }
+
+  .details-serv{
+    width: 310px;
+    height: auto;
+  }
+
+  .card-faq{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .card-faq::after{
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .card-faq h2{
+    font-size: 24px;
+  }
+
+  .bgIconService{
+    width: 50px;
+    height: 50px;
+  }
+
+  .bgIconService img{
+    width: 20px;
+  }
+
+  /* como trabalhamos */
+
+  .test1{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero03{
+    width: 100%;
+  }
+
+  .div-number{
+    width: 320px;
+    height: 320px;
+  }
+
+  .div-number02{
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-discription{
+    display: flex;
+    gap: 30px;
+  }
+}
