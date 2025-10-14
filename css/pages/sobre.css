@@ -414,7 +414,7 @@ video{
     transition: 1s;
   }
 
-  input {
+  input[type="radio"] {
     display: none;
   }
 
