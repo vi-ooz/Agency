@@ -9,6 +9,8 @@ body{
 .section-serv-about{
   background-color: #FDF0E9;
   padding: 76px 135px;
+  display: flex;
+  gap: 40px;
 }
 
 .hero01-about{
@@ -397,44 +399,28 @@ video{
     width: 320px;
     font-size: 40px;
     text-align: left;
-    padding: 0;
-  }
-
-  .team-grid {
-    max-width: 360px;
-    /* height: 400px; */
-    margin: 50px auto;
-    position: relative;
+    padding-bottom: 20px;
   }
 
   /* ======= ÁREA DOS SLIDES ======= */
   .slides {
     width: 100%;
     display: flex;
-    transition: 1s;
-  }
-
-  input[type="radio"] {
-    display: none;
+    gap: 20px;
   }
 
   /* ======= CARD INDIVIDUAL ======= */
   .card-grid {
-    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .team-card{
-    height: 100%;
-  }
 
   .team-card img {
     width: 196px;
     height: 230px;
-    margin-bottom: 15px;
   }
 
   .name-div h4 {
@@ -442,63 +428,5 @@ video{
     font-size: 20px;
   }
 
-  .name-div p {
-    margin: 5px 0 0;
-  }
-
-  /* ======= NAVEGAÇÃO MANUAL ======= */
-  .manual-navigation {
-    position: absolute;
-    width: 100%;
-    bottom: -46px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .manual-btn {
-    border: 1px solid #0000009e;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .manual-btn:hover {
-    background: #ffffff;
-  }
-
-  /* ======= NAVEGAÇÃO AUTOMÁTICA ======= */
-  .navigation-auto {
-    position: absolute;
-    width: 100%;
-    bottom: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    opacity: 0;
-  }
-
-  /* ======= SLIDES AUTOMÁTICOS ======= */
-  #radio1:checked ~ .slides {
-    margin-left: 0;
-  }
-  #radio2:checked ~ .slides {
-    margin-left: -25%;
-  }
-  #radio3:checked ~ .slides {
-    margin-left: -50%;
-  }
-  #radio4:checked ~ .slides {
-    margin-left: -75%;
-  }
-
-  /* ======= BOTÃO SELECIONADO ======= */
-  #radio1:checked ~ .manual-navigation label:nth-child(1),
-  #radio2:checked ~ .manual-navigation label:nth-child(2),
-  #radio3:checked ~ .manual-navigation label:nth-child(3),
-  #radio4:checked ~ .manual-navigation label:nth-child(4){
-    background: #ffffff;
-  }
 
 }

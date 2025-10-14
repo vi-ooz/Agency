@@ -127,56 +127,49 @@
 
                 <div class="team-grid">
 
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-
-                        <div class="slides">
-                            <div class="card-grid">
-                                <div class="team-card">
-                                    <img src="Imagens/Azah.png" alt="Azah Anyeni">
-                                </div>
-                                <div class="name-div">
-                                    <h4>Azah Anyeni</h4>
-                                    <p>Designer</p>
-                                </div>
+                    <div class="slides">
+                        <div class="card-grid">
+                            <div class="team-card">
+                                <img src="Imagens/Azah.png" alt="Azah Anyeni">
                             </div>
-                            
-                            <div class="card-grid">
-                                <div class="team-card">
-                                    <img src="Imagens/Roelof.png" alt="Roelof Bekkenenks">
-                                </div>
-                                <div class="name-div">
-                                    <h4>Roelof Bekkenenks</h4>
-                                    <p>React Developer</p>
-                                </div>
-                            </div>
-                            <div class="card-grid">
-                                <div class="team-card">
-                                    <img src="Imagens/Samya.png" alt="Samia Oliveira">
-                                </div>
-                                <div class="name-div">
-                                    <h4>Samia Oliveira</h4>
-                                    <p>Illustrator</p>
-                                </div>
-                            </div>
-                            <div class="card-grid">
-                                <div class="team-card">
-                                    <img src="Imagens/Izabella.png" alt="Izabella Tabakova">
-                                </div>
-                                <div class="name-div">
-                                    <h4>Izabella Tabakova</h4>
-                                    <p>Product Designer</p>
-                                </div>
+                            <div class="name-div">
+                                <h4>Azah Anyeni</h4>
+                                <p>Designer</p>
                             </div>
                         </div>
-                    <div class="manual-navigation">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
+                        
+                        <div class="card-grid">
+                            <div class="team-card">
+                                <img src="Imagens/Roelof.png" alt="Roelof Bekkenenks">
+                            </div>
+                            <div class="name-div">
+                                <h4>Roelof Bekkenenks</h4>
+                                <p>React Developer</p>
+                            </div>
+                        </div>
+                        <div class="card-grid">
+                            <div class="team-card">
+                                <img src="Imagens/Samya.png" alt="Samia Oliveira">
+                            </div>
+                            <div class="name-div">
+                                <h4>Samia Oliveira</h4>
+                                <p>Illustrator</p>
+                            </div>
+                        </div>
+                        <div class="card-grid">
+                            <div class="team-card">
+                                <img src="Imagens/Izabella.png" alt="Izabella Tabakova">
+                            </div>
+                            <div class="name-div">
+                                <h4>Izabella Tabakova</h4>
+                                <p>Product Designer</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="controls ">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
                 </div>
             </div>
         </section>
@@ -251,23 +244,6 @@
             playBtn.style.display = "block";
             }
         });
-
-        // SCRIPT PARA TROCA AUTOMÁTICA DOS SLIDES
-        let count = 1;
-        document.getElementById("radio1").checked = true; // 'radio1' é checado por padrão no início.
-
-        setInterval(function(){ //A cada 2 segundos, chama a função para mudar para a próxima imagem
-            nextImage();
-        }, 4000);
-
-        function nextImage(){
-            count++;
-            if(count > 4){ 
-                count = 1; //Reinicia a contagem se passar do limite (4 slides)
-            }
-            
-            document.getElementById("radio" + count).checked = true; //Seleciona o radio button com o ID correspondente à contagem atual
-        }
 </script>
                 
                 
