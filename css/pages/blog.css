@@ -74,3 +74,13 @@
   padding: 8px 16px;
 }
 
+.button-email{
+  font-family: 'epilogue', sans-serif;
+}
+
+.button-email:hover{
+  cursor: pointer;
+  box-shadow: #d5b9aa79 0px 2px 10px;
+  
+}
+
