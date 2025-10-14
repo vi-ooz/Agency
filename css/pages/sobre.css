@@ -380,7 +380,6 @@ video{
   /* time */
 
   .team-section{
-    max-width: 360px;
     display: flex;
     flex-direction: column;
     padding: 40px 0px;
@@ -404,12 +403,13 @@ video{
 
   /* ======= ÁREA DOS SLIDES ======= */
   .slides {
+    width: 100%;
    overflow: hidden;
     display: flex;
     gap: 20px;
     padding: 10px 0px 0px 20px;
   }
-  
+
 
   .slider{
     width: 100%;
