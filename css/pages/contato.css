@@ -58,8 +58,9 @@
   background-color: #EF6D58;
 }
 
-
 .card-group{
+  width: auto;
+  flex: 1;
   display: flex;
   justify-content: center;
   border: 1px solid #F3D1BF;
@@ -74,7 +75,7 @@
   flex-direction: column;
   padding: 48px;
   gap: 14px;
-  border-left: 1px solid #f1dcd1;
+  border-left: 1px solid #F3D1BF;
 }
 
 .card:first-child{
@@ -148,3 +149,62 @@
   background-color: #fdf0e9b4;
 }
 
+@media (max-width: 400px){
+  .section-form{
+   max-width: 100%;
+    padding: 40px 20px;
+    display: flex;
+  }
+
+  .form{
+    padding: 30px;
+  }
+
+  .contato{
+    height: auto;
+    display: flex;
+    padding: 40px 20px;
+  }
+
+  .card-group{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card{
+    height: auto;
+    padding: 20px;
+    border-top: 1px solid #F3D1BF;
+  }
+
+  .card:first-child{
+  border-top: none; /* remove a borda do primeiro */
+  }
+  .card:nth-child(2){
+  border-left: none; /* remove a borda do 2 card */
+  }
+  .card:nth-child(3){
+  border-left: none; /* remove a borda do 3 card */
+  }
+
+  /*  */
+
+  .faq-sectionCont{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .div-sectionCont{
+    width: 100%;
+  }
+
+  .faqCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}

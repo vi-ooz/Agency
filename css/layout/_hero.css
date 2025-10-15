@@ -64,7 +64,7 @@
 
   .hero{
     padding: 20px;
-    height: 320px;
+    height: 300px;
   }
 
   .container{
@@ -81,7 +81,6 @@
 
   .section-serv-about{
     padding: 50px 20px;
-   
     display: flex;
     flex-direction: column;
     gap: 20px;

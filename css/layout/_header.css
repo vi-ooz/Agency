@@ -2,7 +2,8 @@
   background-color: #28293E;
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
   padding: 16px 135px;
 }
 
@@ -47,7 +48,7 @@
 
 .menu{
   display: flex;
-  gap: 72px;
+  gap: 100px;
   justify-content: center;
   align-items: center;
 }
@@ -73,7 +74,7 @@
 }
 
 @media (max-width: 400px){ 
-  .navigation-top {
+  .navigation-top{
     justify-content: space-between;
     padding: 20px;
   }
@@ -83,26 +84,29 @@
   }
 
   /* Oculta o menu de desktop e o botão de Contato*/
-  .navigation, .nav-button {
+  .navigation{
     display: none;
   }
 
-  .menu-icon {
+  .menu-icon{
     display: block; /* Garante que o ícone do menu seja visível em mobile */
     cursor: pointer; 
   }
 
   .menu-icon img{
+    width: 20px;
     position: relative;
     bottom: -13px;
+    left: -13px;
+    font-size: 16px;
   }
 
-  .nav-button {
+  .nav-button{
     display: none;
   }
 
   /*Estilizando para virar uma sidebar */
-  .navigation {
+  .navigation{
     position: fixed;
     top: 0;
     right: 0;
@@ -118,14 +122,14 @@
   }
 
   /* Os itens do menu dentro da sidebar */
-  .menu {
+  .menu{
     flex-direction: column; 
     align-items: flex-start;
     padding-top: 3rem; 
     gap: 30px;
   }
 
-  .menu li {
+  .menu li{
     margin: 5px 0; /* Espaçamento vertical entre os itens */
   }
   

@@ -16,6 +16,11 @@
   cursor: pointer;
 }
 
+.primary-button a, .secundary-button a{
+  text-decoration: none;
+  color: white;
+}
+
 .primary-button:hover{
   background-color: #e53b21;
   cursor: pointer;
