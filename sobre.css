@@ -1,64 +1,42 @@
 body{
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center top;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center top;
 }
 
 /**/
-.section-serv{
+.section-serv-about{
   background-color: #FDF0E9;
   padding: 76px 135px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
-.hero01{
-  height: 450px;
+.hero01-about{
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-
+  gap: 180px;
 }
 
-.hero02{
+.hero02-about{
   display: flex;
   flex-direction: column;
-  gap: 33px;
+  gap: 32px;
 }
 
-.hero-title{
-  color: #EF6D58;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 3px; /*Espaços estre as letras*/
-  text-transform: uppercase;
-}
-
-.hero-sub{
-  color: #391400;
-  font-size: 56px;
-  font-weight: 900;
-  line-height: 64px;
-  width: 470px;
-}
-
-.description01{
+.description01-about{
   display: flex;
   justify-content: center;
   max-width: 570px;
-  height: 227px;
-  padding: 30px 135px;
-}
-
-.description02{
-  font-size: 16px;
-  color: #391400;
-  line-height: 32px;
+ 
 }
 /**/
 
-.section-box{
+.section-box-video{
   display: flex;
-  height: 600px;
   background-color: #FDF0E9;
   gap: 30px;
   justify-content: center;
@@ -72,9 +50,9 @@ body{
 .div-video{
   position: relative;
   width: 560px;
-  height: 315px;
   overflow: hidden;
   border-radius: 8px;
+  flex: 1;
 }
 
 video{
@@ -112,9 +90,9 @@ video{
 
 .box-bitmap{
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap; /* Os itens que não cabem mais na linha são quebrados e colocados em uma nova linha, garantindo um layout multilinha.  */
-  gap: 32px;
+  gap: 30px;
+  width: 570px;
 }
 
 .img-bitmap{
@@ -126,8 +104,8 @@ video{
 
 .features{
   display: flex;
+  justify-content: space-between;
   background-color: #FDF0E9;
-  gap: 100px;
 }
 
 .features-group{
@@ -136,7 +114,7 @@ video{
 }
 
 .features-card{
-  /* width: 700px; */
+  width: 370px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -151,34 +129,22 @@ video{
 }
 
 .discription-feat01{
-  width: 540px;
-  height: 40px;
   font-size: 32px;
   line-height: 32px;
   color: #391400;
-  padding-bottom: 30px;
-}
-
-.discription-feat02{
-  width: 500px;
-  height: 100px;
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 300;
 }
 
 /*  */
 
 .container-destaque{
   display: flex;
-  /* padding-right: 130px; */
+  gap: 1rem;
   line-height: 32px;
   font-size: 16px;
 }
 
-.card{
+.cardAbout{
   width: 270px;
-  /* height: 230px; */
   border: 1px solid #F3D1BF;
   background-color: #FDF0E9;
   display: flex;
@@ -203,14 +169,7 @@ video{
 }
 
 .title-destaque{
-  font-size: 24px;
-  font-weight: bold;
   color: #391400;
-}
-
-.discription-destaque{
-  font-size: 16px;
-  font-weight: 300;
 }
 
 /*  */
@@ -276,30 +235,22 @@ video{
 
 .div-team{
   display: flex;
+  gap: 30px;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.subtitle-team{
-  color: #EF6D58;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  width: 700px;
+  text-align: left;
 }
 
 .title-team{
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -1px;
-  font-weight: 900;
-  margin: 20px 0 60px;
+  padding-bottom: 4rem; /*64px*/
   color: white;
 }
 
-.team-grid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+.slides{
+  width: 100%;
+  display: flex;
   gap: 30px;
 }
 
@@ -310,7 +261,6 @@ video{
 }
 
 .team-card {
-  /* width: 270px; */
   height: 272px;
   background: transparent;
   border: 1px solid rgba(255,255,255,0.1);
@@ -318,11 +268,10 @@ video{
   padding: 24px 37px;
   padding-bottom: 1px;
   transition: all 0.3s ease;
+  flex: 1;
 }
 
-.team-card img{
-  overflow: hidden;
-}
+
 
 .team-card:hover {
   border-color: #EF6D58;
@@ -333,17 +282,13 @@ video{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
 }
 
 .name-div h4{
-  font-size: 24px;
-  font-weight: bold;
   color: white;
 }
 
 .name-div p {
-  font-size: 16px;
   color: rgba(255,255,255,0.7);
 }
 
@@ -358,7 +303,7 @@ video{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 37px;
+  width: 48px;
   height: 48px;
   border: 1px solid rgba(255,255,255,0.4);
   border-radius: 50%;
@@ -372,4 +317,128 @@ video{
 .controls button:hover {
   background: #EF6D58;
   border-color: #EF6D58;
+}
+
+@media (max-width: 400px){
+  .section-box-video{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .div-video{
+    max-width: 360px;
+  }
+
+  .box-bitmap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Os itens que não cabem mais na linha são quebrados e colocados em uma nova linha, garantindo um layout multilinha.  */
+    gap: 20px;
+  }
+  
+  .img-bitmap{
+    height: 120px;
+    width: 156px;
+  }
+
+  /* features */
+
+  .features{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-card{
+    width: 320px;
+    padding-bottom: 20px;
+  }
+
+  .container-destaque{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardAbout{
+    width: 300px;
+    height: 300;
+    padding: 20px;
+  }
+
+  /* card */
+
+  .about-sec{
+    padding: 40px 20px;
+  }
+
+  .about-metrics{
+    width: 100%;
+  }
+
+  /* time */
+
+  .team-section{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+
+  .container-team{
+    width: 100%;
+    height: auto;
+  }
+
+  .div-team{
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px 0 20px;
+  }
+
+  .title-team{
+    font-size: 36px;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  /* ======= ÁREA DOS SLIDES ======= */
+  .slides {
+    width: 100%;
+   overflow: hidden;
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px 0px 20px;
+  }
+
+
+  .slider{
+    width: 100%;
+    max-width: 360px;
+  }
+
+  /* ======= CARD INDIVIDUAL ======= */
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .team-card img {
+    width: 196px;
+    height: 230px;
+  }
+
+  .name-div h4 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+
 }
