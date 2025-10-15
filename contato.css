@@ -1,154 +1,104 @@
 .section-form{
   padding: 128px 135px;
-  background-image: url(Imagens/mapContato.png);
+  background-image: url(../../Imagens/mapContato.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .form{
-    width: 400px;
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-    background-color: white;
-    padding: 56px 48px;
-    border-radius: 8px;
-}
-
-.title-form{
-    display: flex;
-    color: #391400;
-    font-size: 30px;
-    font-weight: bolder;
-    line-height: 32px;
-    margin-bottom: 16px;
+  width: 400px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  background-color: white;
+  padding: 56px 48px;
+  border-radius: 8px;
+  color: #391400;
 }
 
 .input-form{
-    border-radius: 6px;
-    height: 36px;
-    padding: 8px 16px;
-    border: 1px solid #F3D1BF;
-    font-size: 16px;
-    line-height: 32px;
-    color: #391400;
+  border-radius: 6px;
+  height: 36px;
+  padding: 8px 16px;
+  border: 1px solid #F3D1BF;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .textarea{
-    border-radius: 6px;
-    height: 84px;
-    padding: 8px 16px;
-    border: 1px solid #F3D1BF;
-    font-size: 16px;
-    line-height: 32px;
-    color: #391400;
-}
-
-.primary-button{
-    align-self: flex-end; /* joga o botão pro lado direito */
-    
+  height: 84px;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: 1px solid #F3D1BF;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 /*section contatos da agency*/
 .contato{
-    background-color: #FDF0E9;
-    height: 200px;
-    padding: 100px 141px;
+  background-color: #FDF0E9;
+  height: 200px;
+  padding: 100px 141px;
 }
 
 .icon{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #EF6D58;
 }
 
-.bg-icon{
+.bgIconContact{
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
   border-radius: 50%;
   background-color: #EF6D58;
 }
 
-
 .card-group{
+  width: auto;
+  flex: 1;
   display: flex;
   justify-content: center;
   border: 1px solid #F3D1BF;
   border-radius: 8px;
   overflow: hidden;
-  /* padding: 20px; */
 }
 
 .card{
+  height: 100%;
   display: flex;
   flex: 1; /* todos os cards vão ocupar a mesma largura */
   flex-direction: column;
   padding: 48px;
   gap: 14px;
-  border-left: 1px solid #f1dcd1;
-  height: 100%;
+  border-left: 1px solid #F3D1BF;
 }
 
 .card:first-child{
   border-left: none; /* remove a borda do primeiro */
 }
 
-.title-grid{
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #EF6D58;
-  text-align: center;
-  font-weight: 300;
-}
-
-.description-grid{
-  font-weight: 400;
-}
-
 /*FAQ*/
 
-.faq-section{
+.faq-sectionCont{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   background-color: #FDF0E9;
-  padding: 100px 132px;
-  font-weight: 300;
+  padding: 100px 135px;
 }
 
-.div-section{
+.div-sectionCont{
   display: flex;
   flex-direction: column;
   width: 470px;
-  
+  gap: 1.25rem;
 }
 
-.title-faq{
-  display: flex;
-  text-transform: uppercase;
-  color: #EF6D58;
-  margin-bottom: 17px;
-}
-
-.subtatile-faq{
-  margin-bottom: 14px;
-  font-size: 40px;
-  line-height: 48px;
- 
-}
-
-.parag-faq{
-  margin-bottom: 29px;
-  line-height: 32px;
-  font-size: 16px;
-
-}
-
-.faq{
+.faqCont{
   padding: 2px;
   width: 570px; 
   margin: 30px auto;
@@ -157,32 +107,32 @@
   border-collapse: collapse;
 }
 
-.details{
+.detailsCont{
   border-bottom: 1px solid #F3D1BF;
 }
 
-.details:last-child{
+.detailsCont:last-child{
   border-bottom: none;
 }
 
-.details[open] summary::after {
+.detailsCont[open] summary::after {
   transform: rotate(-180deg);
 }
 
-.question{
+.questionCont{
+  height: 35px;
   display: flex;
   background-color: #FDF0E9;
   padding: 16px;
   font-weight: bold;
   font-size: 20px;
   line-height: 32px;
-  height: 35px;
-  align-items: center; /*linha os elementos filhos no centro do eixo transversal, ou seja, centraliza-os verticalmente se os itens estiverem dispostos horizontalmente (flex-direction: row), ou horizontalmente se estiverem dispostos verticalmente (flex-direction: column). */
+  align-items: center;
   cursor: pointer;
   position: relative;
 }
 
-.question::after {
+.questionCont::after {
   content: "▾";
   position: absolute;
   right: 16px;
@@ -190,13 +140,79 @@
   color: #f15b4b;
 }
 
-.response{
+.responseCont{
   padding: 16px 16px;
   margin: 0.2vh 0.2vh;
   color: #555;
   line-height: 1.4;
   font-size: 16px;
   background-color: #fdf0e9b4;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+@media (max-width: 400px){
+  .section-form{
+   max-width: 100%;
+    padding: 40px 20px;
+    display: flex;
+  }
+
+  .form{
+    padding: 30px;
+  }
+
+  .contato{
+    height: auto;
+    display: flex;
+    padding: 40px 20px;
+  }
+
+  .card-group{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card{
+    height: auto;
+    padding: 20px;
+    border-top: 1px solid #F3D1BF;
+  }
+
+  .card:first-child{
+  border-top: none; /* remove a borda do primeiro */
+  }
+  .card:nth-child(2){
+  border-left: none; /* remove a borda do 2 card */
+  }
+  .card:nth-child(3){
+  border-left: none; /* remove a borda do 3 card */
+  }
+
+  /*  */
+
+  .faq-sectionCont{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .div-sectionCont{
+    width: 100%;
+  }
+
+  .faqCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .questionCont{
+    font-size: 16px;
+  }
+
+  .detailsCont[open] summary::after {
+    transform: rotate(-180deg);
+  }
+
+}
