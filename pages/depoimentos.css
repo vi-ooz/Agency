@@ -1,0 +1,359 @@
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 80px 135px;
+    background-color: #28293E;
+    color: white;
+}
+
+.div-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card-carrossel{
+    width: 48.125rem;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    padding: 3rem;
+    background-color: white;
+    color: black;
+}
+
+.star{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+}
+
+.clients{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.clients img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 866px;
+    height: 440px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 440px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 860px;
+  top: 780px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:hover{
+  background-color: white;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+
+.navigation-auto div{
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  justify-content: center;
+}
+
+.navigation-auto{
+  width: 860px;
+  position: absolute;
+  bottom: -97px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: white;
+}
+
+/* FAQ escura */
+.faq-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #28293E;
+  color: white;
+}
+
+.div-section{
+  width: 48.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.faqContato{
+  width: 48.125rem; 
+  margin: 30px auto;
+  border: 1px solid #3A3C56;
+  border-radius: 8px;
+  border-collapse: collapse;
+}
+
+.details{
+  border-bottom: 1px solid #3A3C56;
+}
+
+.details:last-child{
+  border-bottom: none;
+}
+
+.details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+.question{
+  width: 46rem;
+  height: 7.063rem;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #28293E;
+  padding: 16px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.question::after {
+  content: "▾";
+  position: absolute;
+  font-size: 2.5rem;
+  right: 16px;
+  transition: transform 0.5s ease;
+  color: #f15b4b;
+}
+
+.response{
+  padding: 16px;
+  color: #ffffff;
+  background-color: #28293E;
+}
+/* Marcas */
+
+.dep{
+  height: 300px;
+  padding: 0 135px;
+  background-color: #28293E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 90px;
+}
+
+/* Banner */
+.bannerDep{
+  height: 300px;
+  background-color: #28293E;
+}
+
+.banner{
+  height: 544px;
+  width: 1170px;
+  justify-content: space-between;
+  background-color: #EF6D58;
+  display: flex;
+  align-items: center;
+  padding: 32px 100px;
+  border-radius: 12px;
+  position: absolute;
+  top: 126.25rem;
+}
+
+/* Footer */
+.footerDep{
+  height: 450px;
+  justify-content: end;
+}
+
+@media (max-width: 400px){
+  .testimonials{
+    padding: 40px 20px;
+  }
+
+  .div-top h2{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .card-carrossel{
+    width: 320px;
+    height: 445px;
+    padding: 20px;
+    border-radius: 8px;;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider{
+    margin: 0 auto;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .slides{
+    width: 300%;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .manual-navigation, .navigation-auto{
+    width: 100%;
+    position: absolute;
+    top: 860px;
+  }
+
+  .navigation-auto{
+    width: 100%;
+    position: absolute;
+    top: 500px;
+  }
+
+  /*  */
+
+  .faq-section{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .div-section{
+    width: 100%;
+  }
+
+  .faqContato{
+    width: 100%;
+  }
+
+  .question{
+    width: 300px;
+    height: 70px;
+    font-size: 20px;
+  }
+
+  .question::after{
+    position: absolute;
+    right: 0px;
+  }
+
+  .response{
+    width: 300px;
+  }
+
+  /*  */
+
+  .marcas{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #28293E;
+  }
+
+  .listas-marcas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 64px;
+  }
+
+  .listas-marcas img {
+    max-width: 147px; /* Define um tamanho máximo para as logos não ficarem gigantes */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  /*  */
+
+  .bannerDep{
+   height: 784px;
+  }
+
+  .banner{
+    width: 320px;
+    height: 784px;
+    flex-direction: column-reverse;
+    padding: 20px;
+    gap: 30px;
+    position: absolute;
+    top: 2104px;
+  }
+
+
+  .footerDep{
+    height: 850px;
+  }
+}
