@@ -81,7 +81,7 @@
 
   .section-serv-about{
     padding: 50px 20px;
-    max-width: 360px;
+   
     display: flex;
     flex-direction: column;
     gap: 20px;
