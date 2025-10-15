@@ -238,7 +238,7 @@ video{
   gap: 30px;
   flex-direction: column;
   align-items: flex-start;
-  width: 700px;
+  max-width: 700px;
   text-align: left;
 }
 
@@ -249,7 +249,7 @@ video{
 
 
 .slides{
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   gap: 30px;
 }
@@ -384,6 +384,7 @@ video{
   /* time */
 
   .team-section{
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 40px 0px;
@@ -395,7 +396,7 @@ video{
   }
 
   .div-team{
-    width: 100%;
+    flex: 1;
     text-align: center;
     padding: 40px 20px 0 20px;
   }
@@ -408,7 +409,7 @@ video{
 
   /* ======= ÁREA DOS SLIDES ======= */
   .slides {
-    width: 100%;
+   
    overflow: hidden;
     display: flex;
     gap: 20px;
@@ -416,10 +417,9 @@ video{
   }
 
 
-  .slider{
-    width: 100%;
+  /* .slider{
     max-width: 360px;
-  }
+  } */
 
   /* ======= CARD INDIVIDUAL ======= */
   .card-grid {
