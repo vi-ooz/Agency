@@ -7,6 +7,10 @@
     background-color: #FDF0E9;
 }
 
+.dropdown-mobile{
+	display: none;
+}
+
 .tab{
     display: flex;
     align-items: center;
@@ -109,4 +113,52 @@
 
 .gridItem h3{
     color: white;
+}
+
+@media (max-width: 400px){
+	.galery{
+		display: flex;
+		flex-direction: column;
+		padding: 40px 20px;
+	}
+
+	.tab{
+		display: none;
+	}
+
+	#selectDrop{
+		width: 200px;
+		height: 30px;
+		border: 1px solid #F3D1BF;
+		border-radius: 6px;
+	}
+
+	#selectDrop option{
+		color: #EF6D58;
+		font-size: 10px;
+	}
+
+	.dropdown-mobile{
+		display: block;
+	}
+
+	.gridGalery{
+		width: 320px;
+		display: grid;
+		grid-template-columns: repeat(1);
+	}
+
+	.gridItem{
+		width: 250px;
+		height: 250px;
+		display: flex;
+		gap: 10px;
+		border-radius: 8px;
+		padding: 20px;
+	}
+
+	.gridItem h3{
+		font-size: 32px;
+	}
+
 }

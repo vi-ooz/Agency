@@ -168,7 +168,6 @@
   }
 
   .hero01{
-    width: 320px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -224,7 +223,11 @@
   }
 
   .bgIconService img{
-    width: 20px;
+    width: 25px;
+  }
+
+  .response-faq h3{
+    font-size: 32px;
   }
 
   /* como trabalhamos */

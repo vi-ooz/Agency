@@ -10,35 +10,33 @@ body{
   background-color: #FDF0E9;
   padding: 76px 135px;
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .hero01-about{
-  height: 450px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-
+  gap: 180px;
 }
 
 .hero02-about{
   display: flex;
   flex-direction: column;
-  gap: 33px;
+  gap: 32px;
 }
 
-.description01{
+.description01-about{
   display: flex;
   justify-content: center;
   max-width: 570px;
-  height: 227px;
-  padding: 30px 135px;
+ 
 }
 /**/
 
 .section-box-video{
   display: flex;
-  height: 600px;
   background-color: #FDF0E9;
   gap: 30px;
   justify-content: center;
@@ -52,9 +50,9 @@ body{
 .div-video{
   position: relative;
   width: 560px;
-  height: 315px;
   overflow: hidden;
   border-radius: 8px;
+  flex: 1;
 }
 
 video{
@@ -92,9 +90,9 @@ video{
 
 .box-bitmap{
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap; /* Os itens que não cabem mais na linha são quebrados e colocados em uma nova linha, garantindo um layout multilinha.  */
-  gap: 32px;
+  gap: 30px;
+  width: 570px;
 }
 
 .img-bitmap{
@@ -106,9 +104,8 @@ video{
 
 .features{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #FDF0E9;
-  gap: 100px;
 }
 
 .features-group{
@@ -117,7 +114,7 @@ video{
 }
 
 .features-card{
-  width: 570px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -241,6 +238,8 @@ video{
   gap: 30px;
   flex-direction: column;
   align-items: flex-start;
+  width: 700px;
+  text-align: left;
 }
 
 .title-team{
@@ -248,9 +247,10 @@ video{
   color: white;
 }
 
-.team-grid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+.slides{
+  width: 100%;
+  display: flex;
   gap: 30px;
 }
 
@@ -268,11 +268,10 @@ video{
   padding: 24px 37px;
   padding-bottom: 1px;
   transition: all 0.3s ease;
+  flex: 1;
 }
 
-.team-card img{
-  overflow: hidden;
-}
+
 
 .team-card:hover {
   border-color: #EF6D58;
@@ -334,9 +333,13 @@ video{
   }
 
   .box-bitmap{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /*2 colunas de largura igual*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Os itens que não cabem mais na linha são quebrados e colocados em uma nova linha, garantindo um layout multilinha.  */
+    gap: 20px;
   }
+  
   .img-bitmap{
     height: 120px;
     width: 156px;
@@ -352,6 +355,7 @@ video{
 
   .features-card{
     width: 320px;
+    padding-bottom: 20px;
   }
 
   .container-destaque{

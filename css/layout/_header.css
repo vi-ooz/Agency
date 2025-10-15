@@ -14,6 +14,10 @@
   align-items: center;
 }
 
+.close-icon{
+  display: none;
+}
+
 .nav-button{
   height: 40px;
   width: 100px;
@@ -99,25 +103,25 @@
 
   /*Estilizando para virar uma sidebar */
   .navigation {
-    position: fixed; /* Fica fixo na tela mesmo com scroll */
+    position: fixed;
     top: 0;
     right: 0;
     
     /* Começa escondido fora da tela */
     transform: translateX(100%); 
     
-    /* Aparência */
-    width: 200px; /* Largura da sidebar */
-    height: 100vh; /* Altura total da tela */
+    /* Aparência sidebar */
+    width: 200px; 
+    height: 100vh; 
     background-color: #2D2D44;
     box-shadow: -5px 0px 15px rgba(0,0,0,0.2);
   }
 
   /* Os itens do menu dentro da sidebar */
   .menu {
-    flex-direction: column; /* Itens ficam um embaixo do outro */
+    flex-direction: column; 
     align-items: flex-start;
-    padding-top: 3rem; /* Espaço no topo */
+    padding-top: 3rem; 
     gap: 30px;
   }
 
